@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <title>Coding Quiz Challenge</title>
+</head>
+
+<body class="background">
+    <header>
+        <p id="high-score-link">View High Scores</p>
+        <p id="timer"></p>
+    </header><br><br><br><br>
+
+    <div class="layout" id="intro">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Answer as many of the following code-related questions within the allotted time. Incorrect answers result in
+            a time penalty of ten seconds each.</p>
+        <p><button id="begin">Begin Assessment</button></p>
+    </div>
+
+    <div id="question1">
+        <h2 id="firstquestion">How many types of heading does HTML contain?</h2>
+        <p><button type="button" class="btn btn-primary first-answers" id="A1" value="A">6</button></p>
+        <p><button type="button" class="btn btn-primary first-answers" id="B1" value="B">4</button></p>
+        <p><button type="button" class="btn btn-primary first-answers" id="C1" value="C">8</button></p>
+        <p><button type="button" class="btn btn-primary first-answers" id="D1" value="D">3</button></p>
+    </div>
+
+    <div id="question2">
+        <h2 id="secondquestion">What types of lists are commonly used in designing a web page?</h2>
+        <p><button type="button" class="btn btn-primary second-answers" id="A2" value="A">Ordered Lists</button></p>
+        <p><button type="button" class="btn btn-primary second-answers" id="B2" value="B">Unordered Lists</button></p>
+        <p><button type="button" class="btn btn-primary second-answers" id="C2" value="C">Definition Lists</button></p>
+        <p><button type="button" class="btn btn-primary second-answers" id="D2" value="D">All of the Above</button></p>
+    </div>
+
+    <div id="question3">
+        <h2 id="thirdquestion">How do you insert a copyright symbol on a browser page?</h2>
+        <p><button type="button" class="btn btn-primary third-answers" id="A3" value="A">& copy;</button></p>
+        <p><button type="button" class="btn btn-primary third-answers" id="B3" value="B">& #169;</button></p>
+        <p><button type="button" class="btn btn-primary third-answers" id="C3" value="C">Both A and B</button></p>
+        <p><button type="button" class="btn btn-primary third-answers" id="D3" value="D">None of the Above</button></p>
+    </div>
+
+    <div id="question4">
+        <h2 id="fourthquestion">Which property is used to change background color in CSS?</h2>
+        <p><button type="button" class="btn btn-primary fourth-answers" id="A4" value="A">color</button></p>
+        <p><button type="button" class="btn btn-primary fourth-answers" id="B4" value="B">background-color</button></p>
+        <p><button type="button" class="btn btn-primary fourth-answers" id="C4" value="C">bgcolor</button></p>
+        <p><button type="button" class="btn btn-primary fourth-answers" id="D4" value="D">None of the Above</button></p>
+    </div>
+
+    <div id="question5">
+        <h2 id="fifthquestion">Which CSS property is used to change the text color of an element?</h2>
+        <p><button type="button" class="btn btn-primary fifth-answers" id="A5" value="A">fgcolor</button></p>
+        <p><button type="button" class="btn btn-primary fifth-answers" id="B5" value="B">text-color</button></p>
+        <p><button type="button" class="btn btn-primary fifth-answers" id="C5" value="C">color</button></p>
+        <p><button type="button" class="btn btn-primary fifth-answers" id="D5" value="D">display-color</button></p>
+    </div>
+
+    <div class="layout" id="complete">
+        <h1>Quiz Complete!</h1>
+        <p>Your final score is </p><br>
+        <p>Enter Name:</p>
+        <p><input type="text" alt="Enter Name"></p>
+        <p><button id="submitscore">Submit</button></p>
+    </div>
+
+    <div class="layout" id="highscores">
+        <h1>High Scores</h1>
+        <li></li>
+        <p><button id="home">Home</button></p>
+        <p><button id="clear">Clear High Scores</button></p>
+    </div>
+
+
+
+
+
+
+    <div class="response layout"></div>
+
+
+
+
+</body>
+
+</html>
