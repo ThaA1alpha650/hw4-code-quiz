@@ -7,7 +7,7 @@ var point = 20;
 //Highest possible score
 var highest = total * point
 
-function init () {
+function init() {
     sessionStorage.setItem("answer1", "A");
     sessionStorage.setItem("answer2", "D");
     sessionStorage.setItem("answer3", "C");
@@ -48,7 +48,7 @@ $(document).ready(function () {
     $("#complete").hide();
     $("#highscores").hide();
 
-    answers1 = function() {
+    answers1 = function () {
 
     }
 
@@ -71,6 +71,111 @@ $(document).ready(function () {
         value: false,
         text: "3",
     };
+
+    $("#A1").click(function () {
+        alert("Correct!");
+        score += 20;
+    });
+
+    $("#B1").click(function () {
+        alert("Wrong!");
+        remaining -= 10;
+    });
+
+    $("#C1").click(function () {
+        alert("Wrong!");
+        remaining -= 10;
+    });
+
+    $("#D1").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+
+    $("#A2").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+    $("#B2").click(function () {
+        alert("Wrong!");
+        remaining -= 10;
+    });
+
+    $("#C2").click(function () {
+        alert("Wrong!");
+        remaining -= 10;
+    });
+
+    $("#D2").click(function () {
+        alert("Correct!");
+        score += 20;
+    });
+
+
+    $("#A3").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+    $("#B3").click(function () {
+        alert("Wrong!");
+        remaining -= 10;
+    });
+
+    $("#C3").click(function () {
+        alert("Correct!");
+        score += 20;
+    });
+
+    $("#D3").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+
+    $("#A4").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+    $("#B4").click(function () {
+        alert("Correct!");
+        score += 20;
+    });
+
+    $("#C4").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+    $("#D4").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+
+    $("#A5").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+    $("#B5").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
+    $("#C5").click(function () {
+        alert("Correct!");
+        score += 20;
+    });
+
+    $("#D5").click(function () {
+        alert("Wrong!");
+        remaining -+ 10;
+    });
+
 
     $("#begin").click(function () {
         $("#intro").toggle();
@@ -123,19 +228,42 @@ $(document).ready(function () {
     // var question4score = 
     // var question5score = 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 })
+
+// function check(q) {
+//     if(q == "question1") {
+//         var chosen = $("button[name=q1]:clicked").val();
+//         if(chosen == sessionStorage.answer1) {
+//             score +=20;
+//             alert("Correct!");
+//         }
+//     }
+// }
+
+// function checkQ1() {
+//     if ($("#A1").click) {
+//         alert("Correct!");
+//     }
+// };
+
+// $("#A1").click(function() {
+//     alert("Correct!");
+// });
+
+// $("#question1").click(function() {
+//     if ($(this).val == "A") {
+//         alert("Correct!");
+//     }
+// });
+
+// function check(q) {
+//     if(q == $("#question1")) {
+//         var chosen = $(this).val();
+//         if(chosen == sessionStorage.answer1) {
+//             score +=20;
+//             alert("Correct!");
+//         };
+//     };
+// };
 
 window.addEventListener("load", init, false);
